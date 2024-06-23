@@ -197,9 +197,7 @@ footer a:hover{
     header h2{
         font-size: 1.3rem;
     }
-    header img{
-        
-    }
+    
     footer .grid-container{
         display: flex;
         flex-direction: column;
