@@ -74,7 +74,7 @@ li {
 
 .bg {
   /* Das Hintergrundbild */
-  background-image: url('../images/2.jpg');
+  background-image: url('2.jpg');
 
   /* Full height */
   min-height: 100%; 
