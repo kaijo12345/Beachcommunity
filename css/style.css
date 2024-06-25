@@ -141,6 +141,107 @@ li {
    
 }
 
+a {
+  background-image: linear-gradient(
+    to right,
+    #ffffffee,
+    #81bbc5 50%,
+    #ffffff 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
 
- 
+a:before{
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+ background-position: 0;
+}
+
+a:hover::before{
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #000000;
+    }
+
+/* Stil für das Input-Feld */
+input[type="text"],
+input[type="email"],
+input[type="telephone"],
+input[type="complaint"],
+input[type="hidden"]
+ {
+  color:rgb(255, 255, 255);
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #000000;
+  background-color:rgba(206, 75, 0, 0.712);
+  border-radius: 25px; /* Erzeugt runde Ecken */
+}
+
+/* Stil für das Input-Feld beim Fokussieren */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="telephone"]:focus,
+input[type="complaint"]:focus,
+input[type="hidden"]:focus 
+{
+  outline:invert;
+  border-color: #a82700;
+}
+
+/* Stil für das Input-Feld, wenn es ungültig ist */
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="telephone"]:invalid {
+  border-color: #ffffff;
+}
+
+fieldset, form {
+  border: none;
+}
+
+.formbutton {
+  color: #ffffff;
+  background-color:rgb(206, 76, 0);
+  width: 100%;
+      
+}
+textarea {
+  background-color:rgba(206, 75, 0, 0.712);
+  width: 100%;
+  color: #ffffff;
+  }
+
+input::placeholder {
+  color: #ffffff; /* Hier kannst du die gewünschte Farbe einstellen */
+}
+textarea::placeholder {
+  color: #ffffff; /* Hier kannst du die gewünschte Farbe einstellen */
+}
+
  
